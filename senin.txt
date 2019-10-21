@@ -1,0 +1,97 @@
+/////////////////////////////////////////////////////
+//////////////////////nomer 1////////////////////////
+/////////////////////////////////////////////////////
+
+STORE "massaBenda" with any value
+STORE "percepatanBenda" with any value
+STORE "resultanGaya" without any value
+
+CALCULATE "massaBenda" times "percepatanBenda"
+SET "resultanGaya" with calculation result
+
+DISPLAY "resultanGaya"
+
+#ALGORITMA_MENGHITUNG_massaBenda
+
+1. Masukkan nilai 600 kedalam "massaBenda";
+2. Masukkan nilai 2 kedalam "percepatanBenda";
+3. Menghitung nilai resultanGaya dengan mengkalikan;
+   nilai "massaBenda" dan "percepatanBenda";
+4. Hasil dari perhitungan pada langkah ke-3 ditampilkan
+   ke layar.
+
+
+
+/////////////////////////////////////////////////////
+//////////////////////nomer 2////////////////////////
+/////////////////////////////////////////////////////
+
+STORE "taHun" to any number
+
+IF "tahun" %4 === 0 && %100 !== 0
+    DISPLAY "TAHUN KABISA"
+
+    ELSE "tahun" %4 === 0 && %100=0 && %400 === 0
+        DISPLAY "TAHUN KABISAT"
+
+        ELSE
+            DISPLAY "BUKAN TAHUN KABISAT"
+
+#ALGORITMA_MENENTUKAN_TAHUN_KABISAT
+
+1. Masukkan nilai "taHun".
+2. Menghitung sisa bagi dari nilai "taHun";
+3. Jika nilai "taHun" habis dibagi 4 dan tidak habis 
+   dibagi 100 maka tampilkan pesan "TAHUN KABISAT";
+4. Jika nilai "taHun" habis dibagi 4, habis dibagi
+   100 dan habis dibagi 400 maka tampilkan pesan
+   "TAHUN KABISAT";
+5. Jika kedua syarat yang telah ditentukan tidak 
+   terpenuhi maka tampilkan "BUKAN TAHUN KABISAT".
+
+/////////////////////////////////////////////////////
+//////////////////////nomer 3////////////////////////
+/////////////////////////////////////////////////////
+
+STORE "paKaian" to any number
+
+WHILE  "paKaian" score <=20
+    DISPLAY "jumlah pakaian belum 20"
+    ADD "paKaian" by 1  
+    DISPLAY "MESIN CUCI DINYALAKAN"
+ENDWHILE
+
+#ALGORITMA_MENGHITUNG_JUMLAH_paKaian
+
+1. Masukkan nilai "paKaian";
+2. Memeriksa nilai "paKaian";
+3. Jika nilai "paKaian" <= 20 tambah nilai "paKaian"
+   dengan 1.
+4. Jika kondisi terpenuhi maka tampilkan "MESIN CUCI 
+   DINYALAKAN".
+
+
+/////////////////////////////////////////////////////
+//////////////////////nomer 4////////////////////////
+/////////////////////////////////////////////////////
+
+READ AND SAVE "muRid" by 40 length
+STORE "daftarMurid" by 0
+WHILE "daftarMurid" less than "muRid" length
+ IF "muRid" "kuKu" EQUAL "panjang" THEN
+   DISPLAY "hukum muRid[n]"
+ ELSE IF "muRid" "kuKU" EQUALS "pendek" THEN
+   DISPLAY "puji muRid[n]"
+ END IF
+ ADD "daftarMurid" by 1
+ENDWHILE
+
+#ALGORITMA_MENENTUKAN_GANJARAN_MURID
+
+1. Membuat data array muRid[1...40];
+2. Masukkan nilai "kuKu" muRid[n];
+3. Memeriksa nilai "kuKu" array muRid[1...40];
+4. Jika nilai "kuKu" dari array muRid[n] adalah "panjang"
+   maka tampilkan "hukum muRid[n];
+5. Jika nilai "kuKu" dari array muRid[n] adalah "pendek"
+   maka tampilkan "puji muRid[n].
