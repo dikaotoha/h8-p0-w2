@@ -29,7 +29,7 @@ DISPLAY "resultanGaya"
 STORE "taHun" to any number
 
 IF "tahun" %4 === 0 && %100 !== 0
-    DISPLAY "TAHUN KABISA"
+    DISPLAY "TAHUN KABISAT"
 
     ELSE "tahun" %4 === 0 && %100=0 && %400 === 0
         DISPLAY "TAHUN KABISAT"
