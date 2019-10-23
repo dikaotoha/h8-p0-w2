@@ -26,16 +26,16 @@ DISPLAY "resultanGaya"
 //////////////////////nomer 2////////////////////////
 /////////////////////////////////////////////////////
 
-STORE "taHun" to any number
+STORE `tahun` to any number
 
-IF "tahun" %4 === 0 && %100 !== 0
-    DISPLAY "TAHUN KABISAT"
-
-    ELSE "tahun" %4 === 0 && %100=0 && %400 === 0
-        DISPLAY "TAHUN KABISAT"
-
-        ELSE
-            DISPLAY "BUKAN TAHUN KABISAT"
+IF tahun MOD 4 EQUAL 0 AND tahun MOD 100 NOT EQUAL THEN
+  DISPLAY "TAHUN KABISAT"
+ELSE IF
+  tahun MOD 4 EQUAL 0 AND tahun MOD 100 EQUAL 100 AND tahun MOD 400 EQUAL 0 THEN
+  DISPLAY "TAHUN KABISAT"
+ELSE
+  DISPLAY "BUKAN TAHUN KABISAT"
+END IF  
 
 #ALGORITMA_MENENTUKAN_TAHUN_KABISAT
 
@@ -53,19 +53,19 @@ IF "tahun" %4 === 0 && %100 !== 0
 //////////////////////nomer 3////////////////////////
 /////////////////////////////////////////////////////
 
-STORE "paKaian" to any number
+STORE `pakaian` with 0
 
-WHILE  "paKaian" score <=20
-    DISPLAY "jumlah pakaian belum 20"
-    ADD "paKaian" by 1  
-    DISPLAY "MESIN CUCI DINYALAKAN"
-ENDWHILE
+WHILE `pakaian` < 20
+   SET `pakaian` with `pakaian` +1
+END WHILE
+  DISPLAY "MESIN CUCI DINYALAKAN"
+
 
 #ALGORITMA_MENGHITUNG_JUMLAH_paKaian
 
-1. Masukkan nilai "paKaian";
-2. Memeriksa nilai "paKaian";
-3. Jika nilai "paKaian" <= 20 tambah nilai "paKaian"
+1. Masukkan nilai "pakaian";
+2. Memeriksa nilai "pakaian";
+3. Jika nilai "paKaian" <20 tambah nilai "pakaian"
    dengan 1.
 4. Jika kondisi terpenuhi maka tampilkan "MESIN CUCI 
    DINYALAKAN".
@@ -75,23 +75,25 @@ ENDWHILE
 //////////////////////nomer 4////////////////////////
 /////////////////////////////////////////////////////
 
-READ AND SAVE "muRid" by 40 length
-STORE "daftarMurid" by 0
-WHILE "daftarMurid" less than "muRid" length
- IF "muRid" "kuKu" EQUAL "panjang" THEN
-   DISPLAY "hukum muRid[n]"
- ELSE IF "muRid" "kuKU" EQUALS "pendek" THEN
-   DISPLAY "puji muRid[n]"
- END IF
- ADD "daftarMurid" by 1
+STORE `totalSiswa` with 40
+STORE `kuku` with ''
+STORE `siswa` with ''
+
+WHILE totalSiswa > 0
+  IF kuku siswa = "Panjang" THEN
+    DISPLAY "DIHUKUM"
+  ELSE 
+    DISPLAY "MEMUJI"
+  END IF
+  SET `totalSiswa` with 'totalSiswa' -1
 ENDWHILE
 
 #ALGORITMA_MENENTUKAN_GANJARAN_MURID
 
-1. Membuat data array muRid[1...40];
-2. Masukkan nilai "kuKu" muRid[n];
-3. Memeriksa nilai "kuKu" array muRid[1...40];
-4. Jika nilai "kuKu" dari array muRid[n] adalah "panjang"
-   maka tampilkan "hukum muRid[n];
-5. Jika nilai "kuKu" dari array muRid[n] adalah "pendek"
-   maka tampilkan "puji muRid[n].
+1. Membuat data totalSiswa;
+2. Masukkan nilai `kuku` siswa;
+3. Memeriksa nilai `kuku` totalSiswa;
+4. Jika nilai `kuku` dari totalSiswa adalah "Panjang"
+   maka tampilkan "DIHUKUM"
+5. Jika nilai 'kuku' tidak "Panjang"
+   maka tampilkan "MEMUJI"
