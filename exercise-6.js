@@ -14,6 +14,8 @@ for(var i=3;i>0;i--){
 
 
 // //nomer 1
+console.log("/////////////////////////////////////")
+console.log("nomor 1")
 var i = 1;
 var j = 10;
 console.log("LOOPING PERTAMA");
@@ -28,6 +30,8 @@ while (j>0) {
 }
 
 // //nomer 2
+console.log("/////////////////////////////////////")
+console.log("nomor 2")
 console.log("LOOPING PERTAMA");
 for(var i=1;i<11;i++){
     console.log(i*2+ " - I love coding");
@@ -38,7 +42,8 @@ for(var j=10;j>0;j--){
 }
 
 //nomer 3
-
+console.log("/////////////////////////////////////")
+console.log("nomor 3")
 for(var i=1; i<=100;i++){
     if(i%2!==0){
         console.log("GANJIL");
