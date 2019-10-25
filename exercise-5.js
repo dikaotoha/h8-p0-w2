@@ -7,6 +7,8 @@ var fifth = 'I';
 var sixth = 'love';
 var seventh = 'it!';
 
+console.log("/////////////////////////////////////")
+console.log("nomor 1");
 console.log(word+' '+second+' '+third+' '+fourth+' '+fifth+' '+sixth+' '+seventh);
 
 //2
@@ -18,7 +20,8 @@ var thirdWord = word[15]+word[16]; // do your own!
 var fourthWord = word[18]+word[19]; // do your own!
 var fifthWord = word[21]+word[22]+word[23]+word[24]; // do your own!
 
-
+console.log("/////////////////////////////////////")
+console.log("nomor 2")
 console.log('First Word: ' + exampleFirstWord);
 console.log('Second Word: ' + secondWord);
 console.log('Third Word: ' + thirdWord);
@@ -44,6 +47,8 @@ var thirdWord3 = word3.substring(15, 17); // do your own!
 var fourthWord3 = word3.substring(18, 20); // do your own!
 var fifthWord3 = word3.substring(21, 25); // do your own!
 
+console.log("/////////////////////////////////////")
+console.log("nomor 3")
 console.log('First Word: ' + exampleFirstWord);
 console.log('Second Word: ' + secondWord3);
 console.log('Third Word: ' + thirdWord3);
@@ -67,6 +72,8 @@ var fourthWordLength = fourthWord4.length;
 var fifthWordLength = fifthWord4.length;
 // create new variables around here
 
+console.log("/////////////////////////////////////")
+console.log("nomor 4")
 console.log('First Word: ' + exampleFirstWord4 + ', with length: ' + firstWordLength);
 console.log('Second Word: ' + secondWord4 +', with length: ' + secondWordLength);
 console.log('Third Word: ' + thirdWord4 +', with length: ' + thirdWordLength);
