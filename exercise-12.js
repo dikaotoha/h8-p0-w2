@@ -3,7 +3,6 @@ function konversiMenit(menit) {
     var jam=0,
         temp=0;
     var cetak='';
-    cetak='';
         for(i=menit;i>=60;i-=60){
             jam+=1;
         }
