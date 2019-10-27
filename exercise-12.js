@@ -4,34 +4,16 @@ function konversiMenit(menit) {
         temp=0;
     var cetak='';
     cetak='';
-    if(menit>60){
         for(i=menit;i>=60;i-=60){
             jam+=1;
         }
         temp=menit%60;
         if(temp<10){
-            cetak=jam+':'+'0'+temp;
+            cetak=jam+':0'+temp;
         }
         else{
             cetak=jam+':'+temp;
         }
-    
-    }
-    else if(menit>120){
-        for(i=menit;i>=60;i-=60){
-            jam+=1;
-        }
-        temp=menit%120;
-        if(temp<10){
-            cetak=jam+':'+'0'+temp;
-        }
-        else{
-            cetak=jam+':'+temp;
-        }
-    }
-    else{
-        cetak=jam+':'+menit;
-    }
     return cetak;
   }
   
