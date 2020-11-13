@@ -2,7 +2,7 @@
 //Tugas 1
 
 function shoutOut(){
-    returng("Halo Function!");
+    return("Halo Function!");
 }
 console.log(shoutOut());
 
